@@ -5,7 +5,7 @@
 Summary:	Node.js virtual environment builder
 Name:		python3-%{module}
 Version:	1.9.1
-Release:	1
+Release:	2
 License:	BSD
 Group:		Libraries/Python
 Source0:	https://pypi.debian.net/%{module}/%{module}-%{version}.tar.gz
