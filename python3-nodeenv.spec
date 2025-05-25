@@ -1,8 +1,10 @@
+#
 # Conditional build:
 %bcond_with	tests	# unit tests
 
 %define		module	nodeenv
 Summary:	Node.js virtual environment builder
+Summary(pl.UTF-8):	Narzędzie do budowania środowisk wirtualnych Node.js
 Name:		python3-%{module}
 Version:	1.9.1
 Release:	3
@@ -27,6 +29,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 nodeenv (node.js virtual environment) is a tool to create isolated
 node.js environments.
+
+%description -l pl.UTF-8
+nodeenv (środowisko wirtualne node.js) to narzędzie do tworzenia
+izolowanych środowisk node.js.
 
 %prep
 %setup -q -n %{module}-%{version}
